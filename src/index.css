@@ -1,32 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-  --primary: #EEA47FFF ;
-  --secondary: #00539CFF;
-  --dark: #1d1d1d;
+    --primary: #eea47fff;
+    --secondary: #00539cff;
+    --dark: #1d1d1d;
 }
 
 body {
-  margin: 0;
-  padding: 20px;
-  font-family: "Poppins";
-  background: var(--secondary);
+    margin: 0;
+    padding: 20px;
+    font-family: 'Poppins';
+    background: var(--secondary);
 }
 
 * {
-  color: #fff;
-  margin: 0;
+    color: #fff;
+    margin: 0;
 }
 
 p {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 button {
-  border: 0;
-  padding: 8px;
-  border-radius: 4px;
-  color:  var(--dark);;
-  background: var(--primary);
-  cursor: pointer;
+    border: 0;
+    padding: 8px;
+    border-radius: 4px;
+    color: var(--dark);
+    background: var(--primary);
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 16px;
+    justify-content: end;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.nav-link.active {
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+.logo {
+    width: 100px;
+    object-fit: contain;
 }
