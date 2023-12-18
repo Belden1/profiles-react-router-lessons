@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom"
+import { NavLink, Outlet } from 'react-router-dom'
 
 const HelpLayout = () => {
     return (
@@ -12,7 +12,7 @@ const HelpLayout = () => {
                 <NavLink className="help-layout__nav__link" to="faq">Läs FAQ</NavLink>
                 <NavLink className="help-layout__nav__link" to="contact">Kontakta oss</NavLink>
             </nav>
-            <Outlet/>
+            <Outlet />
         </div>
     )
 }

@@ -31,23 +31,27 @@ button {
     cursor: pointer;
 }
 
+header {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .nav-links {
     display: flex;
     gap: 16px;
     justify-content: end;
+    max-width: 1200px;
 }
 
 .nav-link {
     text-decoration: none;
     padding: 6px;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 .nav-link.active {
@@ -58,4 +62,64 @@ button {
 .logo {
     width: 100px;
     object-fit: contain;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.help-layout__nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.help-layout__nav__link {
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.help-layout__nav__link:hover {
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+.help-layout__nav__link.active {
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+.faq__question {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 20px;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+form {
+    margin-top: 30px;
+}
+
+form input,
+form label span,
+form textarea {
+    display: block;
+}
+
+form input,
+form textarea {
+    margin-bottom: 30px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 0;
+    width: 300px;
+    color: var(--secondary);
+}
+
+form label span {
+    margin-bottom: 10px;
 }
