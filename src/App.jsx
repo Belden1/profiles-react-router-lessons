@@ -12,6 +12,9 @@ import Faq from './pages/help/Faq'
 import Contact from './pages/help/Contact'
 import NotFound from './pages/NotFound'
 import Profile, { profileLoader } from './pages/profiles/Profile'
+import ProfileDetails, {
+    profileDetailsLoader,
+} from './pages/profiles/ProfileDetails'
 
 import RootLayout from './layouts/RootLayout'
 import HelpLayout from './layouts/HelpLayout'
@@ -28,6 +31,7 @@ const router = createBrowserRouter(
             </Route>
             <Route path="profiles" element={<ProfileLayout />}>
                 <Route index element={<Profile />} loader={profileLoader} />
+                <Route path=':id' element={<ProfileDetails/>} loader={profileDetailsLoader} />
             </Route>
             <Route path="*" element={<NotFound />} />
         </Route>

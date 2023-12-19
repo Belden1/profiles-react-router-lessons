@@ -6,7 +6,7 @@ export default function Profile() {
     return (
         <div className="profiles">
             {careers.map((career) => (
-                <Link className="profiles__links" to={'/'} key={career.id}>
+                <Link className="profiles__links" to={career.id.toString()} key={career.id}>
                     <p>{career.name}</p>
                     <p className="profiles__station">Jobbar på: {career.company.name}</p>
                 </Link>
