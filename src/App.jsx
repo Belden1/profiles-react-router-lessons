@@ -12,9 +12,7 @@ import Faq from './pages/help/Faq'
 import Contact from './pages/help/Contact'
 import NotFound from './pages/NotFound'
 import Profile, { profileLoader } from './pages/profiles/Profile'
-import ProfileDetails, {
-    profileDetailsLoader,
-} from './pages/profiles/ProfileDetails'
+import ProfileDetails, { profileDetailsLoader } from './pages/profiles/ProfileDetails'
 
 import RootLayout from './layouts/RootLayout'
 import HelpLayout from './layouts/HelpLayout'
