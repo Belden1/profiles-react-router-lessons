@@ -17,5 +17,10 @@ export default function Profile() {
 
 export const profileLoader = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users')
+
+    if (!res.ok) {
+        throw Error('Det gick inte att hämta profilerna')
+    }
+    
     return res.json()
 }

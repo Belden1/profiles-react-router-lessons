@@ -2,7 +2,6 @@ import { Link, useLoaderData } from 'react-router-dom'
 
 export default function ProfileDetails() {
     const profile = useLoaderData()
-    console.log(profile)
 
     return (
         <div>
@@ -22,6 +21,10 @@ export default function ProfileDetails() {
 export const profileDetailsLoader = async ({ params }) => {
     const { id } = params
     const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+
+    if (!res.ok) {
+        throw Error(`Det gick inte att hämta profilen med id: ${id}`)
+    }
 
     return res.json()
 }
